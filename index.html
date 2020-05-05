@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calkizyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Calkizy App</title>
+
+	<!-- Include Bootstrap library for stylesheet. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Include custom stylesheet. -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bootstrap container. -->
+    <div class="container-fluid" id="container">
+        <hr>
+        <h2 style="text-align: center;">The Calkizy App with AngularJS</h2>
+        <hr>
+        <div class="row text-center">
+            <!-- Controller for Calkizy App-->
+            <div ng-controller="calkizyController">
+                <form action="#">
+                    <div class="row">
+                        <input type="text" id="display" value="{{userInput}}">
+                        <br>
+                    </div>
+                    <div class="row">
+                        <!-- First row for calculator screen. -->
+                        <input type="button" value="X^2" id="btnCalc" ng-click="power('2')">
+                        <input type="button" value="X^3" id="btnCalc" ng-click="power('3')">
+                        <input type="button" value="CLR" id="btnCalc" ng-click="clear()">
+                        <input type="button" value="BKSP" id="btnCalc" ng-click="backspace()">
+                    </div>
+                    <div class="row">
+                        <!-- Second row for calculator screen. -->
+                        <input type="button" value="7" id="btnCalc" ng-click="display('7')">
+                        <input type="button" value="8" id="btnCalc" ng-click="display('8')">
+                        <input type="button" value="9" id="btnCalc" ng-click="display('9')">
+                        <input type="button" value="/" id="btnCalc" ng-click="display('/')">
+                    </div>
+                    <div class="row">
+                        <!-- Third row for calculator screen. -->
+                        <input type="button" value="4" id="btnCalc" ng-click="display('4')">
+                        <input type="button" value="5" id="btnCalc" ng-click="display('5')">
+                        <input type="button" value="6" id="btnCalc" ng-click="display('6')">
+                        <input type="button" value="*" id="btnCalc" ng-click="display('*')">
+                    </div>
+                    <div class="row">
+                        <!-- Fourth row for calculator screen. -->
+                        <input type="button" value="1" id="btnCalc" ng-click="display('1')">
+                        <input type="button" value="2" id="btnCalc" ng-click="display('2')">
+                        <input type="button" value="3" id="btnCalc" ng-click="display('3')">
+                        <input type="button" value="-" id="btnCalc" ng-click="display('-')">
+                    </div>
+                    <div class="row">
+                        <!-- Fifth row for calculator screen. -->
+                        <input type="button" value="0" id="btnCalc" ng-click="display('0')">
+                        <input type="button" value="." id="btnCalc" ng-click="display('.')">
+                        <input type="button" value="=" id="btnCalc" ng-click="compute()">
+                        <input type="button" value="+" id="btnCalc" ng-click="display('+')">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include AngularJS library. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+
+    <!-- Include custom AngularJS script. -->
+    <script src="app.js"></script>
+</body>
+</html>

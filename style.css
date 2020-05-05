@@ -1,0 +1,68 @@
+body {
+	font-family: "Lucida Console", Monaco, monospace;
+	background-color: #DDDDDD;
+}
+
+#container {
+	/* position container */
+	width: 400px;
+	min-height: 60px;
+	margin: 70px auto;
+	margin-top: 40px;
+
+	/* border property*/
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #FF851B;     /* orange */
+
+	/* internal margin, i.e., padding */
+	padding: 30px 30px;           /* top and bottom paddings are 10px. Right and left paddings are 20px. */
+	padding-bottom: 70px;
+
+	background-color: #01FF70;    /* lime */
+}
+
+#btnCalc
+{
+	width: 70px;
+	height: 35px;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 50px inset;
+	cursor: pointer;					
+}
+
+#display
+{
+	width: 350px;
+	height: 30px;	
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 3px;
+	box-shadow: 0px 0px 10px #0074D9;
+	text-align: right;				
+	font: 20px bold;
+	color: blue;
+}
+
+h2 {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+hr {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	border-color: #FF851B;     /* orange */
+}
+
+div {
+	margin-bottom: 10px;
+}
+
+
